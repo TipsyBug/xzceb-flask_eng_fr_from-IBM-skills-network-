@@ -14,7 +14,7 @@ def english_to_french(english_text):
     and returns the French translation as output.
     """
 
-    french_text = MyMemoryTranslator(english_text,"fr-FR")
+    french_text = MyMemoryTranslator(source = "en", terget = "fr")
     return french_text
 
 def french_to_english(french_text):
@@ -23,7 +23,7 @@ def french_to_english(french_text):
     and returns the English translation as output.
     """
 
-    english_text = MyMemoryTranslator(french_text, "en-GB")
+    english_text = MyMemoryTranslator(source = "fr", terget = "en")
     return english_text
 
 # fr = english_to_french("Hello")
