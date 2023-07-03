@@ -16,8 +16,7 @@ class TestF2E(unittest.TestCase):
         """Test Bonjour returns Hello"""
         self.assertEqual(french_to_english('bonjour'), 'hello')
         """Test Bonjour doesn't return Hello"""    
-        self.assertNotEqual(french_to_english('Bonjour'), 'Bonjour')
+        self.assertNotEqual(french_to_english('bonjour'), 'bonjour')
 
 if __name__ == "__main__":
     unittest.main()
-    
